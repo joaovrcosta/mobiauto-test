@@ -12,9 +12,11 @@ const SearchResultPage = ({ carData }: IProps) => {
   return (
     <MaxWidthWrapper>
       <S.WrapperContainer>
-        <Heading color="gray_800" weight="bold">
-          Tabela Fipe: {carData?.model}
-        </Heading>
+        <S.HeadingContainer>
+          <Heading color="gray_800" weight="bold">
+            Tabela Fipe: {carData?.model}
+          </Heading>
+        </S.HeadingContainer>
         {carData && (
           <div>
             <S.PriceWrapper>
@@ -42,9 +44,11 @@ const SearchResultPage = ({ carData }: IProps) => {
         )}
       </S.WrapperContainer>
       <section>
-        <Heading weight="semibold" size="sm" color="purple_500">
-          Quer saber mais sobre outros carros?
-        </Heading>
+        <S.SubHeadingContainer>
+          <Heading weight="semibold" size="sm" color="purple_500">
+            Quer saber mais sobre outros carros?
+          </Heading>
+        </S.SubHeadingContainer>
         <S.RecomendationContainer>
           <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
           <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />

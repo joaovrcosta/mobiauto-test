@@ -20,7 +20,7 @@ interface Option {
 }
 
 interface ComboboxProps {
-  options: Option[]
+  options: Option[] | null
   placeholder: string
 }
 
@@ -29,7 +29,7 @@ export function Combobox({ options, placeholder }: ComboboxProps) {
   const { setBrand, setModel, setYear, brand, model, year } = carStore()
 
   const initialValue = brand || model || year || ''
-  const initialOption = options.find((option) => option.code === initialValue)
+  const initialOption = options?.find((option) => option.code === initialValue)
 
   const [selectedValue, setSelectedValue] = useState(
     initialOption ? initialOption.code : ''
@@ -39,7 +39,7 @@ export function Combobox({ options, placeholder }: ComboboxProps) {
   )
 
   const handleSelect = (currentValue: any) => {
-    const selectedOption = options.find(
+    const selectedOption = options?.find(
       (option) => option.code === currentValue
     )
 
@@ -83,7 +83,7 @@ export function Combobox({ options, placeholder }: ComboboxProps) {
             <CommandEmpty>Nenhum resultado.</CommandEmpty>
             <CommandGroup>
               <CommandList>
-                {options.map((option) => (
+                {options?.map((option) => (
                   <CommandItem
                     key={option.code}
                     value={option.code}

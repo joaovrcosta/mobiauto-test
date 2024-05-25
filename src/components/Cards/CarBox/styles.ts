@@ -9,6 +9,10 @@ export const Container = styled.div`
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   .view-text {
     position: absolute;
     bottom: 0;

@@ -12,6 +12,12 @@ export const WrapperContainer = styled.section`
   margin-bottom: 2rem;
   border-radius: 6px;
 `
+export const HeadingContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
 
 export const PriceWrapper = styled.div`
   display: flex;
@@ -52,6 +58,7 @@ export const RecomendationContainer = styled.div`
   @media (max-width: 768px) {
     align-items: center;
     justify-content: center;
+    padding: 1rem;
   }
 `
 
@@ -91,4 +98,10 @@ export const CardBoxWrapper = styled.div`
 `
 export const PricingContainer = styled.div`
   margin-top: 2rem;
+`
+
+export const SubHeadingContainer = styled.div`
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `
