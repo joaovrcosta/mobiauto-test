@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/atoms/button'
 import styled from 'styled-components'
 
 export const HeadingWrapper = styled.section`
@@ -10,4 +11,11 @@ export const HeadingWrapper = styled.section`
   @media (max-width: 768px) {
     padding: 2rem;
   }
+`
+export const ButtonContainer = styled.div`
+  margin-top: 2rem;
+`
+
+export const ConsultButton = styled(Button)`
+  background-color: ${({ theme }) => theme.colors.purple_500};
 `

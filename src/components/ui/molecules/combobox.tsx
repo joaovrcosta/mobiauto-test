@@ -78,7 +78,6 @@ export function Combobox({ options, placeholder }: ComboboxProps) {
       <PopoverContent className="w-[324px] h-[280px] p-0 overflow-hidden">
         <div className="overflow-y-auto max-h-full">
           <Command>
-            <CommandInput placeholder="Pesquisar" />
             <CommandEmpty>Nenhum resultado.</CommandEmpty>
             <CommandGroup>
               <CommandList>

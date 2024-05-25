@@ -1,6 +1,18 @@
 import api from './api'
 import { IGetModelYears, IGetModels } from './types'
 
+export const getBrands = async (vehicleType: string) => {
+  try {
+    const response = await api.get(
+      `https://fipe.parallelum.com.br/api/v2/${vehicleType}/brands`
+    )
+    return response.data
+  } catch (error) {
+    console.error('error ao buscar marcas:', error)
+    throw error
+  }
+}
+
 export const getModels = async ({ vehicleType, brand }: IGetModels) => {
   try {
     const response = await api.get(
