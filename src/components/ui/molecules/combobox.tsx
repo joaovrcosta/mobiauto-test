@@ -76,7 +76,6 @@ export function Combobox({ options, placeholder }: ComboboxProps) {
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[324px] h-[280px] p-0 overflow-hidden">
-        {/* Use uma div com estilos de rolagem */}
         <div className="overflow-y-auto max-h-full">
           <Command>
             <CommandInput placeholder="Pesquisar" />

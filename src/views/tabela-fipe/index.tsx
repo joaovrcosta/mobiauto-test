@@ -61,7 +61,7 @@ const TabelaFipePage = () => {
     }
   }, [isModelFilledIn, brand, model])
 
-  const submit = async ({ brand, model, year }: any) => {
+  const onSubmit = async ({ brand, model, year }: any) => {
     await router.push(`/tabela-fipe/carros/${brand}/${model}/${year}`)
     setModel(null)
     setYear(null)
@@ -80,7 +80,7 @@ const TabelaFipePage = () => {
         </S.HeadingWrapper>
         <S.CardSection>
           <Card variant="md" hug={false} rounding="rounded">
-            <S.FormContainer onSubmit={handleSubmit(submit)}>
+            <S.FormContainer onSubmit={handleSubmit(onSubmit)}>
               <Combobox
                 placeholder="Marca"
                 options={brands}
