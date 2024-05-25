@@ -19,7 +19,23 @@ export default function Document() {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7665473143170681"
           crossOrigin="anonymous"
         ></script>
+        <title>Tabela FIPE Maio 2024: Consulte preços de veículos</title>
+        <link
+          rel="icon"
+          href="https://www.mobiauto.com.br/icons/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          href="https://www.mobiauto.com.br/icons/favicon-32x32.png"
+          sizes="192x192"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://www.mobiauto.com.br/icons/favicon-32x32.png"
+        />
       </Head>
+
       <body>
         <Main />
         <NextScript />

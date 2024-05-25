@@ -4,18 +4,18 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useRouter } from 'next/navigation'
 import { FormData } from './types'
 import { searchFipeSchema } from './schemas'
-import { MaxWidthWrapper } from '../../components/maxWidthWrapper'
-import { Heading } from '../../components/heading'
-import { Text } from '../../components/text'
-import Card from '../../components/Cards/Card'
-import { Combobox } from '../../components/ui/molecules/combobox'
-import { carStore } from '../../store/car'
-import { Spinner } from '../../components/Spinner'
 import { Form } from '@/components/Form'
 import useBrand from '@/hooks/useBrand'
 import useModel from '@/hooks/useModel'
 import useModelYears from '@/hooks/useModelYears'
 import { useEffect } from 'react'
+import { carStore } from '@/store/car'
+import { Combobox } from '@/components/ui/molecules/combobox'
+import { Spinner } from '@/components/Spinner'
+import { MaxWidthWrapper } from '@/components/maxWidthWrapper'
+import { Heading } from '@/components/heading'
+import { Text } from '@/components/text'
+import Card from '@/components/Cards/Card'
 
 const TabelaFipePage = () => {
   const { register, handleSubmit, formState, setValue, watch } =
@@ -42,7 +42,7 @@ const TabelaFipePage = () => {
   useModel({ vehicleType, brand })
   useModelYears({ vehicleType, brand, model, isModelFilledIn })
 
-  const onSubmit = async ({ brand, model, year }: any) => {
+  const onSubmit = async ({ brand, model, year }: FormData) => {
     await router.push(`/tabela-fipe/carros/${brand}/${model}/${year}`)
     setModel(null)
     setYear(null)
@@ -101,7 +101,7 @@ const TabelaFipePage = () => {
               ) : (
                 <>
                   <S.SearchButton disabled={!isYearFilledIn} type="submit">
-                    Consultar
+                    Consultar preço
                   </S.SearchButton>
                 </>
               )}
