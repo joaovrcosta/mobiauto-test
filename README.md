@@ -4,6 +4,8 @@ Built with the Next.js Page Router, TypeScript, Styled-Components, Tailwind
 
 ![tabelafipe-mobi](https://github.com/joaovrcosta/mobiauto-test/assets/70654718/5bf1411c-2685-4e41-877f-78ee86e0700e)
 
+📎 mobiauto-test-tau.vercel.app
+
 ## Features
 
 - 🛠️ Build With Next.js 13
@@ -14,6 +16,7 @@ Built with the Next.js Page Router, TypeScript, Styled-Components, Tailwind
 - ✅ Personalized Hooks
 - ⌨️ Custom hooks
 - 🌐 State with Zustand
+- ⚙️ with GetServerSideProps
 
 ## Getting started
 
