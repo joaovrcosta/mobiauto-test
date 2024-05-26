@@ -12,7 +12,7 @@ interface ICarStore {
   brands: Option[] | null
   models: Option[] | null
   modelYears: Option[] | null
-  setBrand: (brand: string | null) => void
+  setBrand: (brand: string) => void
   setModel: (model: string | null) => void
   setYear: (year: string | null) => void
   setBrands: (brands: Option[] | null) => void
@@ -27,7 +27,7 @@ export const carStore = create<ICarStore>((set) => ({
   brands: null,
   models: null,
   modelYears: null,
-  setBrand: (brand: string | null) => set({ brand }),
+  setBrand: (brand: string) => set({ brand }),
   setModel: (model: string | null) => set({ model }),
   setYear: (year: string | null) => set({ year }),
   setBrands: (brands: Option[] | null) => set({ brands }),

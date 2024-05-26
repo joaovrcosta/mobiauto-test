@@ -18,7 +18,7 @@ import { Text } from '@/components/text'
 import Card from '@/components/Cards/Card'
 
 const TabelaFipePage = () => {
-  const { register, handleSubmit, formState, setValue, watch } =
+  const { register, handleSubmit, formState, setValue, watch, setError } =
     useForm<FormData>({
       resolver: zodResolver(searchFipeSchema),
     })
@@ -43,9 +43,16 @@ const TabelaFipePage = () => {
   useModelYears({ vehicleType, brand, model, isModelFilledIn })
 
   const onSubmit = async ({ brand, model, year }: FormData) => {
-    await router.push(`/tabela-fipe/carros/${brand}/${model}/${year}`)
-    setModel(null)
-    setYear(null)
+    if (brand && model && year) {
+      await router.push(`/tabela-fipe/carros/${brand}/${model}/${year}`)
+      setModel(null)
+      setYear(null)
+    } else {
+      setError('root', {
+        type: 'manual',
+        message: 'Por favor, preencha todos os campos obrigatórios.',
+      })
+    }
   }
 
   return (
