@@ -2,7 +2,7 @@ import {
   ColorThemeType,
   TitleFontSize,
   WeightFont,
-} from '../../core/constants/theme'
+} from '@/core/constants/theme'
 import * as S from './styles'
 
 import { HTMLAttributes } from 'react'

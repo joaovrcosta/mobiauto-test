@@ -8,13 +8,15 @@ interface IUseBrand {
 
 const useBrand = ({ vehicleType }: IUseBrand) => {
   useEffect(() => {
-    getBrands(vehicleType)
-      .then((data) => {
-        carStore.setState({ brands: data })
-      })
-      .catch((error) => {
-        console.error('error:', error)
-      })
+    if (vehicleType !== null) {
+      getBrands(vehicleType)
+        .then((data) => {
+          carStore.setState({ brands: data })
+        })
+        .catch((error) => {
+          console.error('error:', error)
+        })
+    }
   }, [vehicleType])
 }
 

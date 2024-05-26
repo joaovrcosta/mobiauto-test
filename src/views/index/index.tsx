@@ -1,12 +1,12 @@
-import { Heading } from '../../components/heading'
-import { MaxWidthWrapper } from '../../components/maxWidthWrapper'
-import { Text } from '../../components/text'
 import * as S from './styles'
 import Link from 'next/link'
 import { FaCarSide } from 'react-icons/fa'
 import { FaLightbulb, FaMoneyBill } from 'react-icons/fa'
 import { BrandBox } from '@/components/BrandBox'
 import { IoIosArrowForward } from 'react-icons/io'
+import { MaxWidthWrapper } from '@/components/maxWidthWrapper'
+import { Heading } from '@/components/heading'
+import { Text } from '@/components/text'
 
 const IndexPage = () => {
   return (

@@ -9,7 +9,7 @@ interface IUseModel {
 
 const useModel = ({ vehicleType, brand }: IUseModel) => {
   useEffect(() => {
-    if (brand !== '') {
+    if (brand !== null && vehicleType !== '') {
       getModels({ vehicleType, brand })
         .then((data) => {
           carStore.setState({ models: data })

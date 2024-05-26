@@ -1,5 +1,5 @@
+import { Button } from '@/components/ui/atoms/button'
 import styled from 'styled-components'
-import { Button } from '../../components/ui/atoms/button'
 
 export const MainContainer = styled.div``
 

@@ -50,11 +50,31 @@ const SearchResultPage = ({ carData }: IProps) => {
           </Heading>
         </S.SubHeadingContainer>
         <S.RecomendationContainer>
-          <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
-          <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
-          <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
-          <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
-          <CardBox price="R$138.894,00" brand="BYD" model="Dolphin" />
+          <CardBox
+            price="R$138.894,00"
+            brand={carData?.brand}
+            model="Dolphin"
+          />
+          <CardBox
+            price="R$138.894,00"
+            brand={carData?.brand}
+            model="Dolphin"
+          />
+          <CardBox
+            price="R$138.894,00"
+            brand={carData?.brand}
+            model="Dolphin"
+          />
+          <CardBox
+            price="R$138.894,00"
+            brand={carData?.brand}
+            model="Dolphin"
+          />
+          <CardBox
+            price="R$138.894,00"
+            brand={carData?.brand}
+            model="Dolphin"
+          />
         </S.RecomendationContainer>
       </section>
     </MaxWidthWrapper>

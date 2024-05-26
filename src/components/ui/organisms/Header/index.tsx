@@ -3,7 +3,6 @@ import logoMobiAuth from '@/assets/logo-mobiauto.png'
 import shortLogoMobiAuto from '@/assets/short-logo-mobiauto.png'
 import * as S from './styles'
 import Link from 'next/link'
-import { Button } from '../../atoms/button'
 import { CgProfile } from 'react-icons/cg'
 import { IoSearchOutline } from 'react-icons/io5'
 import { RxHamburgerMenu } from 'react-icons/rx'
@@ -30,21 +29,22 @@ export function Header() {
         <S.NavContainer>
           <ul>
             <li>
-              <Button variant="ghost">
+              <S.NavButton variant="ghost">
+                <TiHome size={24} />
                 <Link href="/">Inicio</Link>
-              </Button>
+              </S.NavButton>
             </li>
             <li>
-              <Button variant="ghost">
+              <S.NavButton variant="ghost">
                 <IoLocationSharp size={22} className="mr-1" color="#5d01bc" />
                 <Link href="/">SP</Link>
-              </Button>
+              </S.NavButton>
             </li>
             <li>
-              <Button variant="ghost">
+              <S.NavButton variant="ghost">
                 <CgProfile size={24} className="mr-1" color="#5d01bc" />
                 <Link href="#">Entrar</Link>
-              </Button>
+              </S.NavButton>
             </li>
             <li>
               <S.CheckButton>

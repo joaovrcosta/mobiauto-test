@@ -16,7 +16,7 @@ const useModelYears = ({
   isModelFilledIn,
 }: IUseModelYears) => {
   useEffect(() => {
-    if (isModelFilledIn !== null) {
+    if (model !== null && vehicleType !== '' && isModelFilledIn !== null) {
       getModelYears({ vehicleType, brand, model })
         .then((data) => {
           carStore.setState({ modelYears: data })

@@ -3,16 +3,15 @@ import {
   Command,
   CommandEmpty,
   CommandGroup,
-  CommandInput,
   CommandItem,
 } from '../molecules/command'
-import { Popover, PopoverContent, PopoverTrigger } from '../molecules/popover'
 import { CheckIcon } from 'lucide-react'
-import { Button } from '../atoms/button'
 import { CommandList } from 'cmdk'
 import { FaCaretDown } from 'react-icons/fa'
-import { carStore } from '../../../store/car'
-import { cn } from '../../../lib/utils'
+import { Popover, PopoverContent, PopoverTrigger } from './popover'
+import { Button } from '../atoms/button'
+import { carStore } from '@/store/car'
+import { cn } from '@/lib/utils'
 
 interface Option {
   name?: string

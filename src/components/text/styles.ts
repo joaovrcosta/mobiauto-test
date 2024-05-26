@@ -1,9 +1,9 @@
-import styled from 'styled-components'
 import {
   ColorThemeType,
   TextFontSize,
   WeightFont,
-} from '../../core/constants/theme'
+} from '@/core/constants/theme'
+import styled from 'styled-components'
 
 interface TextProps {
   size?: TextFontSize

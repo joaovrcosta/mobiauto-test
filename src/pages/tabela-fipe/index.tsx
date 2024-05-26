@@ -1,7 +1,7 @@
-import { DefaultLayout } from '../../layouts/default'
-import TabelaFipePage from '../../views/tabela-fipe'
-import { NextPageWithLayout } from '../_app'
+import TabelaFipePage from '@/views/tabela-fipe'
 import { ReactElement } from 'react'
+import { DefaultLayout } from '@/layouts/default'
+import { NextPageWithLayout } from '../_app'
 
 const TabelaFipeScreen: NextPageWithLayout = () => {
   return <TabelaFipePage />

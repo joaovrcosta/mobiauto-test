@@ -1,5 +1,5 @@
 export interface ICar {
   price: string
-  brand: string
+  brand: any
   model: string
 }

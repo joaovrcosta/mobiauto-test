@@ -1,5 +1,5 @@
+import { Header } from '@/components/ui/organisms/Header'
 import styled from 'styled-components'
-import { Header } from '../../components/ui/organisms/Header'
 
 interface ILayout {
   children: React.ReactNode

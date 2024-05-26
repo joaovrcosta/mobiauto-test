@@ -97,7 +97,6 @@ export const PrimarySpinner = styled.span<ISpinner>`
           border-width: 4px;
         `
       } else {
-        // Default size (md)
         return css`
           width: 32px;
           height: 32px;
@@ -143,7 +142,6 @@ export const SecondarySpinner = styled.span<ISpinner>`
         border: 4px solid;
       `
     } else {
-      // Default size (md)
       return css`
         width: 32px;
         height: 32px;

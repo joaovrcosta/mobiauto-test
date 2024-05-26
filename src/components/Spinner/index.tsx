@@ -1,4 +1,4 @@
-import { ColorThemeType } from '../../core/constants/theme'
+import { ColorThemeType } from '@/core/constants/theme'
 import * as S from './styles'
 
 interface SpinnerProps {
